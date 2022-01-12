@@ -1,1 +1,10 @@
-resizeToAvoidBottomInset: false,-(coder for scafold resize)
+======UI=======
+resizeToAvoidBottomInset: false,-(code for scafold resize)
+
+
+
+
+
+=============FLUTTER SDK============
+
+1.Any type of build error TRY:- flutter clean, flutter pub get, flutter pub cache repair
