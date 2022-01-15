@@ -12,3 +12,13 @@ resizeToAvoidBottomInset: false,-(code for scafold resize)
 =============FLUTTER SDK============
 
 1.Any type of build error TRY:- flutter clean, flutter pub get, flutter pub cache repair
+
+
+
+=====CHROME HACK=====
+(INSPECT MOBILE WEBSITE IN LAPTOP)
+strps->
+1. open chrome in laptop and type in url chrome://inspect/#devices
+2. connect your mobile to laptop using usb
+3. check  Discover network targets option
+4. now open any website in your mobile 
