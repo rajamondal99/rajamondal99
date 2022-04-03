@@ -1,0 +1,54 @@
+To send mail via gmail using smtp 
+
+
+steps
+1> download phpmailer packed from git hub. link:https://github.com/PHPMailer/PHPMailer
+2> config your gmail account 
+        . Turn off 2 step verification
+        . On less secure app access
+        . Enable IMAP access (you can fiend this setting on your email settings->Forwarding and POP/IMAP)
+       
+3> write some php code 
+
+``` 
+<?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require './assets/library/src/Exception.php';
+require './assets/library/src/PHPMailer.php';
+require './assets/library/src/SMTP.php';
+
+$mail = new PHPMailer();
+$mail->IsSMTP();
+$mail->Mailer = "smtp";
+
+$mail->SMTPDebug  = 0;  
+$mail->SMTPAuth   = TRUE;
+$mail->SMTPSecure = "tls";
+$mail->Port       = 587;
+$mail->Host       = "smtp.gmail.com";
+$mail->Username   = "testingsltech@gmail.com";
+$mail->Password   = "yourPassword";
+
+$mail->IsHTML(true);
+$mail->AddAddress("sachinburnawal01@gmail.com", "Sachin");
+$mail->SetFrom("testingsltech@gmail.com", "SL Tech ERP Solution");
+$mail->Subject = "Notification";
+$content = "<b>This is a Email From Sl Tech Erp Solution.</b>";
+
+
+
+$mail->MsgHTML($content); 
+if(!$mail->Send()) {
+  //echo "Error while sending Email.<br>";
+  //var_dump($mail);
+	echo"Error: $mail->ErrorInfo";
+} else {
+  echo "Email sent successfully";
+}
+?>
+```
+
+NOW YOU ARE GOOD TO GO :)
+THANK YOU.
