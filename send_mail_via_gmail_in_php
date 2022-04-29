@@ -7,8 +7,8 @@ steps
         . Turn off 2 step verification
         . On less secure app access
         . Enable IMAP access (you can fiend this setting on your email settings->Forwarding and POP/IMAP)
-       
-3> write some php code 
+3> Go to "https://accounts.google.com/DisplayUnlockCaptcha" url and allow captch      
+4> write some php code 
 
 ``` 
 <?php
