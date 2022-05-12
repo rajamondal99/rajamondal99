@@ -1,0 +1,11 @@
+========For get XMLID =======
+
+
+  Future<dynamic> getXmlId() async {
+    return await Constants.ecommerceRpc!.callKw({
+      'model': 'ir.model.data',
+      'method': 'xmlid_to_res_id',
+      'args': [],
+      'kwargs': {'xmlid': 'base.group_portal'},
+    });
+  }
