@@ -14,6 +14,25 @@ resizeToAvoidBottomInset: false,-(code for scafold resize)
 1.Any type of build error TRY:- flutter clean, flutter pub get, flutter pub cache repair
 
 
+2. Remove OverScroll Glow effect of any scroll view
+  try: """ 
+  NotificationListener<OverscrollIndicatorNotification>(
+
+        onNotification: (overScroll) {
+
+          overScroll.disallowGlow();
+
+          return;
+
+        },
+
+child: //Your scrolling widget goes here(like ListView)
+
+);
+  
+  """
+
+
 
 =====CHROME HACK=====
 (INSPECT MOBILE WEBSITE IN LAPTOP)
