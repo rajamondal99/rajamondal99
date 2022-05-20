@@ -4,6 +4,7 @@ resizeToAvoidBottomInset: false,-(code for scafold resize)
 
 ======DART=========
 1.format double to 2 decimal places:- double.parse((10.99999).toStringAsFixed(2));
+2.Dart code analized https://docs.codemagic.io/flutter-testing/static-code-analysis/
 
 
 
