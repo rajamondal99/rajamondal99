@@ -12,8 +12,17 @@ resizeToAvoidBottomInset: false,-(code for scafold resize)
 
 =============FLUTTER SDK============
 
-1.Any type of build error TRY:- flutter clean, flutter pub get, flutter pub cache repair
-
+1.Any type of build error TRY:- 
+    flutter clean,
+    flutter pub get,
+    flutter pub cache repair
+==IF NOT SOLVE THEN===
+   flutter channel stable
+   flutter upgrade --force
+   flutter clean
+   flutter pub get
+   flutter pub run build_runner build
+   flutter packages pub run build_runner build --delete-conflicting-outputs
 
 2. Remove OverScroll Glow effect of any scroll view
   try: """ 
@@ -32,6 +41,10 @@ child: //Your scrolling widget goes here(like ListView)
 );
   
   """
+  
+  3.To run in debug mode (with letsplay-server running locally)
+
+  flutter run --dart-define=DEBUG=TRUE
 
 
 
