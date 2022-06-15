@@ -1,0 +1,14 @@
+1.To see any Stack logs
+first to the directory(where docker-compose.yml file exist)
+then run
+it will show full logs
+'''
+docker-compose logs -f
+
+'''
+
+2. To see last 100 logs
+first to the directory(where docker-compose.yml file exist)
+'''
+docker-compose logs
+'''
