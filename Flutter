@@ -1,10 +1,25 @@
 ======UI=======
-resizeToAvoidBottomInset: false,-(code for scafold resize)
+1.resizeToAvoidBottomInset: false,-(code for scafold resize)
+2. Change Status bar color
+'''
+body: AnnotatedRegion<SystemUiOverlayStyle>(
+        value: SystemUiOverlayStyle.light.copyWith(
+          statusBarColor: Colors.transparent,
+        ),
+        child:
+'''
 
 
 ======DART=========
 1.format double to 2 decimal places:- double.parse((10.99999).toStringAsFixed(2));
 2.Dart code analized https://docs.codemagic.io/flutter-testing/static-code-analysis/
+
+
+
+
+=====FIREBASE=====
+1.for stop recapcha verification in firebase otp auth
+    i> install Android Device Verification in your google cloud console(in your project)link-https://console.cloud.google.com/apis/api/androidcheck.googleapis.com/metrics?project=stayhook-b55ee
 
 
 
