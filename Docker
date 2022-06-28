@@ -12,3 +12,9 @@ first to the directory(where docker-compose.yml file exist)
 '''
 docker-compose logs
 '''
+
+
+
+======Nginx===========
+to add ssl visit-https://www.cloudbooklet.com/install-odoo-13-on-ubuntu-18-04-with-nginx-google-cloud/
+*install certbot in nginx container
