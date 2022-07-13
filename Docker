@@ -13,6 +13,11 @@ first to the directory(where docker-compose.yml file exist)
 docker-compose logs
 '''
 
+3. to connect a container as root
+ '''
+ docker exec -u 0 -it 8662ea2fa000 /bin/sh
+ '''
+
 
 
 ======Nginx===========
