@@ -18,7 +18,9 @@ docker-compose logs
  docker exec -u 0 -it 8662ea2fa000 /bin/sh
  '''
 
-
+=====Portainer install====
+link
+https://www.the-digital-life.com/portainer-ubuntu-tutorial/
 
 ======Nginx===========
 to add ssl visit-https://www.cloudbooklet.com/install-odoo-13-on-ubuntu-18-04-with-nginx-google-cloud/
