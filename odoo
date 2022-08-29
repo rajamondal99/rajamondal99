@@ -1,0 +1,8 @@
+=====Session=========
+If you want to set a value in the session , you can do it as follows,
+
+request.session['val_name'] = value
+To access the value which set in the session,
+
+request.session['val_name']
+
