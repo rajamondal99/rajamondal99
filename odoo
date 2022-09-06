@@ -6,3 +6,23 @@ To access the value which set in the session,
 
 request.session['val_name']
 
+====setup odoo in vsCode=====
+{
+        "version": "3.8",
+        "configurations": [
+            {
+                "name": "Run Odoo",
+                "type": "python",
+                "request": "launch",
+                "stopOnEntry": false,
+                "console": "integratedTerminal",
+                "python": "/usr/local/bin/python3.8", // cari dengan which python3
+                "program": "/Users/sachinburnawal/Documents/odoo 13/source/odooitlunch/odoo/odoo-bin",
+                "args": [
+                    "--config=/Users/sachinburnawal/Documents/odoo 13/custom/odoo-addons-ilunch/odooee.conf",
+                    // "--database=tutor1,tutor2",
+                    // "--update=nama_folder1,nama_folder2"
+                ]
+            },
+        ]
+}
