@@ -24,7 +24,7 @@ Bidi.stripHtmlIfNeeded("<p>Hello World</p>");
 =====FIREBASE=====
 1.for stop recapcha verification in firebase otp auth
     i> install Android Device Verification in your google cloud console(in your project)link-https://console.cloud.google.com/apis/api/androidcheck.googleapis.com/metrics?project=stayhook-b55ee
-
+2.If realtime database gives error "access denied" -> Togo Firebase console click on realtime database then go to rules. Update the rules set everything true.
 
 
 
