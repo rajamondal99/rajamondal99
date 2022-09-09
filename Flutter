@@ -14,6 +14,10 @@ body: AnnotatedRegion<SystemUiOverlayStyle>(
 1.format double to 2 decimal places:- double.parse((10.99999).toStringAsFixed(2));
 2.Dart code analized https://docs.codemagic.io/flutter-testing/static-code-analysis/
 
+3. Remove html tags from string dart
+``` import 'package:intl/intl.dart';
+Bidi.stripHtmlIfNeeded("<p>Hello World</p>");
+```
 
 
 
