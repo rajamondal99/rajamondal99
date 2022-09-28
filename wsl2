@@ -1,0 +1,4 @@
+how to copy file from windows to wsl
+```
+cd /mnt/c/Users/<windows.username>/Pictures
+```
