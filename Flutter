@@ -27,6 +27,10 @@ Bidi.stripHtmlIfNeeded("<p>Hello World</p>");
 2.If realtime database gives error "access denied" -> Togo Firebase console click on realtime database then go to rules. Update the rules set everything true.
 
 
+=======GETX=========
+1. use of offNamedUntil
+        Get.offNamedUntil(
+              Routes.MY_BOOKINGS, ModalRoute.withName(Routes.INDEX));
 
 
 =============FLUTTER SDK============
