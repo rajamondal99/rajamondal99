@@ -31,6 +31,7 @@ Bidi.stripHtmlIfNeeded("<p>Hello World</p>");
 1. use of offNamedUntil
         Get.offNamedUntil(
               Routes.MY_BOOKINGS, ModalRoute.withName(Routes.INDEX));
+2. ref: https://dev-yakuza.posstree.com/en/flutter/getx/route/#getoffnameduntil
 
 
 =============FLUTTER SDK============
