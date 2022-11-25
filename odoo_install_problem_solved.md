@@ -45,6 +45,7 @@ sudo apt install python<!your exact python version>-dev
    ref: https://www.syntaxis.be/blog/the-blog-1/post/install-wkhtmltopdf-0-12-5-on-ubuntu-20-04-6
  
    #Download the package
+   
      ```
      wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb
      ```
