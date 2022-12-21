@@ -19,6 +19,8 @@ body: AnnotatedRegion<SystemUiOverlayStyle>(
 Bidi.stripHtmlIfNeeded("<p>Hello World</p>");
 ```
 
+===Firebase config===
+1.To  get Debug signing certificate SHA-1 => go to android folder and un this ./gradlew signingReport 
 
 
 =====FIREBASE=====
