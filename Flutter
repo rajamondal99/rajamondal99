@@ -1,3 +1,11 @@
+====to generate gradlew signingReport ===
+goto android
+```cd android/```
+and run 
+``` ./gradlew signingReport ```
+
+
+
 ======UI=======
 1.resizeToAvoidBottomInset: false,-(code for scafold resize)
 2. Change Status bar color
