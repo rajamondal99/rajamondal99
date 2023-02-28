@@ -52,3 +52,8 @@ nodecron.schedule("0 0 */1 * *", async function () {
 
 
 ```
+
+4. To use soft delete in nodejs and mongodb
+    ```
+    https://nour-karoui.medium.com/implementing-soft-delete-in-mongodb-with-mongoose-405c008d0e29
+    ```
