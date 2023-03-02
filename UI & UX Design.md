@@ -22,5 +22,5 @@
 #Find Logo Design
 ``` https://www.brandcrowd.com/ ```
 
-#Loding Gif
+#Loading Gif
 ``` https://loading.io/ ```
