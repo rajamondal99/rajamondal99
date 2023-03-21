@@ -1,0 +1,22 @@
+1. search query
+```
+var word = "riker"
+yourModel.find({
+  "$or": [
+    {
+      "user": {
+        "$regex": word,
+        "$options": "i"
+      },
+      
+    },
+    {
+      "username": {
+        "$regex": word,
+        "$options": "i"
+      }
+    }
+  ]
+})
+
+```
