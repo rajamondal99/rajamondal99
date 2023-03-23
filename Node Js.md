@@ -57,3 +57,41 @@ nodecron.schedule("0 0 */1 * *", async function () {
     ```
     https://nour-karoui.medium.com/implementing-soft-delete-in-mongodb-with-mongoose-405c008d0e29
     ```
+    
+5. How to install NodeJs on server
+
+      i> download nodejs from Nodesource.
+    ```
+    curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+    ```
+    ii> install nodejs
+    ```
+    sudo apt-get install -y nodejs
+    ```
+    iii>Check the installation 
+    ```
+    node --version && npm --version
+    ```
+
+6. How to use pm2 as a process manager
+    i>Install pm2 using the commands below
+    ```
+    sudo npm i pm2 -g
+    ```
+    ii>Start the application using the following command
+    ```
+    pm2 start app.js
+    ```
+    
+7. How to use serve packege to deploy react build on server
+    i> install serve globally
+    ```
+    npm install -g serve
+
+    ```
+    ii> now serve your build folder
+    ```
+    serve -s build
+    ```
+ 
+
