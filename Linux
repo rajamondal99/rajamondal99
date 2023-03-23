@@ -1,0 +1,4 @@
+1. ==== To know os info from cli =====
+```
+cat /etc/os-release
+```
