@@ -29,3 +29,9 @@ request.session['val_name']
             },
         ]
 }
+
+
+===debug xml ===
+```
+<t t-debug="pdb"/>
+```
