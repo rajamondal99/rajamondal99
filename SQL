@@ -1,0 +1,4 @@
+1. If else statement in update query
+```
+UPDATE product_template SET tracking = CASE WHEN detailed_type = 'product' THEN 'lot' ELSE 'none' END;
+```
