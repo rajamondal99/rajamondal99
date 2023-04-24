@@ -35,3 +35,13 @@ request.session['val_name']
 ```
 <t t-debug="pdb"/>
 ```
+
+
+====Share filestore with multiple db======
+```
+sudo -u odoo ln -s /home/odoo/.local/share/Odoo/filestore/odoo_training /home/odoo/.local/share/Odoo/filestore/odoo
+
+rm odoo/odoo_training
+
+sudo -u odoo ln -s /home/odoo/.local/share/Odoo/filestore/odoo /home/odoo/.local/share/Odoo/filestore/odoo_training
+```
