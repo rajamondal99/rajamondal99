@@ -1,0 +1,109 @@
+upstream vinchi.furniture {
+     server 127.0.0.1:8069;
+ }
+
+ server {
+     listen [::]:80;
+     listen 80;
+
+     server_name vinchi.furniture https://www.vinchi.furniture;
+
+     return 301 https://www.vinchi.furniture$request_uri;
+ }
+
+ server {
+     listen [::]:443 ssl default_server;
+     listen 443 ssl default_server;
+
+     server_name vinchi.furniture;
+
+     ssl_certificate /etc/letsencrypt/live/vinchi.furniture/fullchain.pem;
+     ssl_certificate_key /etc/letsencrypt/live/vinchi.furniture/privkey.pem;
+
+     return 301 http://vinchi.furniture$request_uri;
+ }
+
+ server {
+     listen [::]:443 ssl http2;
+     listen 443 ssl http2;
+
+     server_name vinchi.furniture https://www.vinchi.furniture;
+
+     ssl_certificate /etc/letsencrypt/live/vinchi.furniture/fullchain.pem;
+     ssl_certificate_key /etc/letsencrypt/live/vinchi.furniture/privkey.pem;
+
+     access_log /var/log/nginx/odoo_access.log;
+     error_log /var/log/nginx/odoo_error.log;
+
+     proxy_read_timeout 720s;
+     proxy_connect_timeout 720s;
+     proxy_send_timeout 720s;
+     proxy_set_header X-Forwarded-Host $host;
+     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+     proxy_set_header X-Forwarded-Proto $scheme;
+     proxy_set_header X-Real-IP $remote_addr;
+     proxy_set_header Host $host;
+
+upstream vinchi.furniture {
+     server 127.0.0.1:8069;
+ }
+
+ server {
+     listen [::]:80;
+     listen 80;
+
+     server_name vinchi.furniture https://www.vinchi.furniture;
+
+     return 301 https://www.vinchi.furniture$request_uri;
+ }
+
+ server {
+     listen [::]:443 ssl default_server;
+     listen 443 ssl default_server;
+
+     server_name vinchi.furniture;
+
+     ssl_certificate /etc/letsencrypt/live/vinchi.furniture/fullchain.pem;
+     ssl_certificate_key /etc/letsencrypt/live/vinchi.furniture/privkey.pem;
+
+     return 301 http://vinchi.furniture$request_uri;
+ }
+
+ server {
+     listen [::]:443 ssl http2;
+     listen 443 ssl http2;
+
+     server_name vinchi.furniture https://www.vinchi.furniture;
+
+     ssl_certificate /etc/letsencrypt/live/vinchi.furniture/fullchain.pem;
+     ssl_certificate_key /etc/letsencrypt/live/vinchi.furniture/privkey.pem;
+
+     access_log /var/log/nginx/odoo_access.log;
+     error_log /var/log/nginx/odoo_error.log;
+
+     proxy_read_timeout 720s;
+     proxy_connect_timeout 720s;
+     proxy_send_timeout 720s;
+     proxy_set_header X-Forwarded-Host $host;
+     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+     proxy_set_header X-Forwarded-Proto $scheme;
+     proxy_set_header X-Real-IP $remote_addr;
+     proxy_set_header Host $host;
+
+
+     location / {
+        proxy_redirect off;
+        proxy_pass http://vinchi.furniture;
+     }
+
+     location ~* /web/static/ {
+         proxy_cache_valid 200 90m;
+         proxy_buffering on;
+         expires 864000;
+         proxy_pass http://vinchi.furniture;
+     }
+
+     gzip_types text/css text/less text/plain text/xml application/xml application/json application/javascript;
+     gzip on;
+ }
+
