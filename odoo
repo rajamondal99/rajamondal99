@@ -45,3 +45,10 @@ rm odoo/odoo_training
 
 sudo -u odoo ln -s /home/odoo/.local/share/Odoo/filestore/odoo /home/odoo/.local/share/Odoo/filestore/odoo_training
 ```
+
+==== run requirment.txt on multiple python version =====
+```
+python3.8 -m pip install -r requirements.txt
+```
+
+
