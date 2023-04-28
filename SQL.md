@@ -7,3 +7,7 @@ UPDATE product_template SET tracking = CASE WHEN detailed_type = 'product' THEN 
 ```
 https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-ACTIVITY-VIEW
 ```
+  >>First set some parameters 
+  ```
+  https://www.postgresql.org/docs/current/sql-set.html
+  ```
