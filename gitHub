@@ -5,3 +5,7 @@ https://username:password@gitlab.com/
 clone for a branch
 git clone https://github.com/odoo/odoo.git --depth 1 --branch <BRANCH NAME> --single-branch
 
+Revert local changes 
+```
+git reset --hard origin/<branch_name>
+```
