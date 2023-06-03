@@ -1,0 +1,28 @@
+You might need to Update your pubspec.yaml depending on the flutter channel you want to work on:
+
+If you are on stable channel :
+
+Go into pubspec.yaml and type in:
+
+environment:
+  sdk: ">=2.2.0 <3.0.0"
+(Whatever Dart SDK version you want comes in the front)
+
+dependencies:
+  cupertino_icons: ^1.0.0
+If you are on beta channel :
+
+environment:
+      sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  cupertino_icons: ^1.0.1
+Then if you are on stable channel (or beta), open the terminal in your IDE and enter
+
+flutter channel stable
+# or flutter channel beta
+flutter upgrade
+flutter pub get
+Check the version with flutter --version
+
+Hope it helps.
