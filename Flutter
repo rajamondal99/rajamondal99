@@ -111,3 +111,9 @@ strps->
 
 ======Readymade multivendor app========
 ``` https://docs.6amtech.com/docs-six-am-mart/mobile-apps/mandatory-setup ```
+
+===Signup with facebook docs====
+>package anme = flutter_facebook_auth
+```
+https://facebook.meedu.app/docs/5.x.x/android
+```
