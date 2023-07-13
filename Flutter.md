@@ -14,6 +14,15 @@ and run
 ``` ./gradlew signingReport ```
 
 
+===tap outside remove keyboard====
+```
+runApp(GestureDetector(
+    onTap: () {
+      WidgetsBinding.instance.focusManager.primaryFocus?.unfocus();
+    },
+    child: const MyApp(),
+  ));
+```
 
 ======UI=======
 1.resizeToAvoidBottomInset: false,-(code for scafold resize)
