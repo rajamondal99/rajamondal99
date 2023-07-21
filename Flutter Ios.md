@@ -36,6 +36,7 @@ import FirebaseMessaging
 
 ```
 3. If you get this error [no such module 'firebasecore' ]
+ ref:-https://i.stack.imgur.com/HOF5t.png
 ```
 Goto xcode general->scroll down->In fremwork, libraries and Embeded content-> Add FirebaseCore.fremwork  select (Do Not Embeded)
 ```
