@@ -55,13 +55,8 @@ Goto xcode general->scroll down->In fremwork, libraries and Embeded content-> Ad
   });
 ```
 
-5. Space in app name
+5. Space in iOS app name is not showing
    ```
-   In your localized InfoPlist.string DO NOT use spaces but instead use unicode character "No-break space" :
-
-http://www.fileformat.info/info/unicode/char/00a0/index.htm
-
-so your line in InfoPlist.string should look like :
-
-"CFBundleDisplayName" = "My\U00A0app";
+   For iOS 11 you can open the info.plist as source code and use &#x2007; instead of spaces
+   ref:- https://stackoverflow.com/questions/35495888/space-in-ios-app-name-is-not-showing
    ```
