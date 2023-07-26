@@ -54,3 +54,14 @@ Goto xcode general->scroll down->In fremwork, libraries and Embeded content-> Ad
     debugPrint("-======"+token.toString()+"=========");
   });
 ```
+
+5. Space in app name
+   ```
+   In your localized InfoPlist.string DO NOT use spaces but instead use unicode character "No-break space" :
+
+http://www.fileformat.info/info/unicode/char/00a0/index.htm
+
+so your line in InfoPlist.string should look like :
+
+"CFBundleDisplayName" = "My\U00A0app";
+   ```
