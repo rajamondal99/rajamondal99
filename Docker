@@ -29,3 +29,8 @@ to add ssl visit-https://www.cloudbooklet.com/install-odoo-13-on-ubuntu-18-04-wi
 =====Server==========
 to copy file from local to server
 sudo scp -i /home/sltech/Downloads/blumor.pem -r  odoo15_fullsetup.zip   ubuntu@13.233.42.7:/home/ubuntu/
+
+to download file from one server to another server
+```
+scp -r bidfoodhome-dev@45.77.140.109:/home/bidfoodhome-dev/htdocs/sachin.zip /downloads
+```
