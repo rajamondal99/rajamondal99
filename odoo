@@ -1,3 +1,18 @@
+====How to know where is you python version files are =====
+```
+whereis python3.10
+```
+output:  """" python3.10: /usr/bin/python3.10 /usr/lib/python3.10 /etc/python3.10 /usr/local/lib/python3.10 /usr/include/python3.10 /usr/share/man/man1/python3.10.1.gz  """
+
+
+=== How to install requirment.txt in specific python version ====
+
+```
+/usr/bin/python3.10 -m pip install -r requirements.txt
+
+```
+
+
 =====Install========
 https://github.com/Yenthe666/InstallScript
 
