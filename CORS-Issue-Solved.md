@@ -17,3 +17,10 @@ fetch(proxyUrl + targetUrl)
 
 ```
 Note: Using a public proxy like CORS-anywhere is not recommended for production applications due to security and reliability concerns. Consider setting up your own proxy server or using a more secure alternative like a reverse proxy.
+
+-To user Using CORS-anywhere:
+
+  1. Open your browser and type this url in urlbar 'https://cors-anywhere.herokuapp.com/+ YOUR_URL'
+  2. Then you have to request the token 
+  3. To copy the token inspect element in html form there is a token copy the token.
+  4. And add this token to your request header ('x-requested-with': COPIED TOKEN)
