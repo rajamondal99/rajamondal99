@@ -11,3 +11,12 @@ https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT
   ```
   https://www.postgresql.org/docs/current/sql-set.html
   ```
+3. Pg restore using verbose (.sql file)
+  ```
+  pg_restore --verbose --clean --no-acl --no-owner --host=localhost --dbname=db_name --username=username latest.sql
+  ```
+4. Pg restore (.dump file)
+  ```
+  pg_restore -d bella_oman -p 5437 bella_live_2024-01-11_10-44-15.dump -U sltech
+  ```
+
