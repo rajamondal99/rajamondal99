@@ -15,3 +15,13 @@ nmcli dev wifi list
 ```
 netsh wlan show all
 ```
+5. === how to set charge upto 80 percent in ubuntu 22.04 =======
+```
+echo '80' | sudo tee /sys/devices/platform/lg-laptop/battery_care_limit
+```
+6. =====Bluetooth headphones cannot connect after update to Ubuntu 22.04===
+```
+sudo apt install --reinstall pulseaudio-module-bluetooth
+pactl unload-module module-bluetooth-discover
+pactl load-module module-bluetooth-discover
+```
