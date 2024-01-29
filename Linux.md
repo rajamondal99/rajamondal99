@@ -25,3 +25,7 @@ sudo apt install --reinstall pulseaudio-module-bluetooth
 pactl unload-module module-bluetooth-discover
 pactl load-module module-bluetooth-discover
 ```
+7. To check file size
+```
+ls -l -h
+```
