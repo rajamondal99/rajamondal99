@@ -66,4 +66,9 @@ sudo -u odoo ln -s /home/odoo/.local/share/Odoo/filestore/odoo /home/odoo/.local
 python3.8 -m pip install -r requirements.txt
 ```
 
+===CURL commend to backup database =====
+```
+curl -X POST -F 'master_pwd=mmmm' -F  'name=odoo16final' -F 'backup_format=sql' -o /opt/odoobella1.sql http://localhost:8069/web/database/backup
+```
+
 
