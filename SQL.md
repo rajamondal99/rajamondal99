@@ -11,7 +11,7 @@ https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT
   ```
   https://www.postgresql.org/docs/current/sql-set.html
   ```
-3. Pg restore using verbose (.sql file)
+3. Pg restore using verbose (it works with both the file type .sql/.dump file)
   ```
   pg_restore --verbose --clean --no-acl --no-owner --host=localhost --dbname=db_name --username=username latest.sql
   ```
