@@ -12,6 +12,10 @@ output:  """" python3.10: /usr/bin/python3.10 /usr/lib/python3.10 /etc/python3.1
 
 ```
 
+===Odoo RPC Docs====
+```
+https://www.odoo.com/documentation/17.0/developer/reference/external_api.html
+```
 
 =====Install========
 https://github.com/Yenthe666/InstallScript
