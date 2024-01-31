@@ -29,3 +29,7 @@ pactl load-module module-bluetooth-discover
 ```
 ls -l -h
 ```
+8. To check which service running in the port
+```
+lsof -i :8080
+```
