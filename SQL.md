@@ -19,4 +19,7 @@ https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT
   ```
   pg_restore -d bella_oman -p 5437 bella_live_2024-01-11_10-44-15.dump -U sltech
   ```
-
+5. Gunzip. Restore database from dump.sql.gz file.
+   ```
+   gunzip < dump.sql.gz | sudo -u sltech psql bella_13 -p 5437
+   ```
