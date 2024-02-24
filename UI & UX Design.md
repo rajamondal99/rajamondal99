@@ -34,8 +34,6 @@ https://downloader.la
 ```https://m2.material.io/components/cards/flutter#card```
 
 #Logo design
-```
-https://logolab.app
-```
+```https://logolab.app```
 
 
