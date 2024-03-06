@@ -46,6 +46,7 @@
 
 
 **How to create a runner on GitLab?**
+
 To create a runner on GitLab, open your repo -> click on setting -> select ci-cd -> you can see the runner option, expand it -> click on new project runner.
 After creating a runner you will get a token. This token needs to be registered on your server.
 
