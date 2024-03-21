@@ -51,9 +51,20 @@ sudo apt install python<!your exact python version>-dev
 
     sudo apt install -f
     ```
- 
+
+ 6. Package libssl1.1 is not installed.
+
+ ```
+ wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+
+ sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+ ```
      
-     
+7.  Package xfonts-75dpi is not installed.
+
+ ```
+ sudo apt-get --assume-yes install xfonts-75dpi xfonts-base
+ ```
      
      
      
