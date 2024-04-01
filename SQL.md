@@ -23,3 +23,8 @@ https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT
    ```
    gunzip < dump.sql.gz | sudo -u sltech psql bella_13 -p 5437
    ```
+
+6. Curl Command.
+```
+curl -X POST -F 'master_pwd=NWVSNx6tLOStkaMr' -F 'name=moonshine_live' -F 'backup_format=zip' -o /opt/moonshine_live_01_april_2024.zip http://localhost:8069/web/database/backup
+```
