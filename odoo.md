@@ -3,6 +3,11 @@
 python3 odoo-bin --addons-path=/odoo/odoo-server/addons,/odoo/custom/addons/test_cicd --http-port=8099 -d test -i royal_motorsc
 ```
 
+===Odoo All Versions===
+```
+https://nightly.odoo.com/17.0/nightly/deb/
+```
+
 ====How to know where is you python version files are =====
 ```
 whereis python3.10
