@@ -69,6 +69,13 @@ sudo /usr/bin/python3.8 -m pip install -r requirements.txt
      
      
      
-     
+
+# Solution of psycopg2 error on odoo 9
+
+```
+python2.7 -m pip uninstall psycopg2
+
+python2.7 -m pip install --no-binary :all: psycopg2
+```
      
      
