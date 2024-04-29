@@ -1,9 +1,9 @@
 # To inspect service workers in chrome
 ```
-chrome://serviceworker-internals/?devtools
+chrome://inspect/#service-workers
 ```
 
 # To check the log of service workers
 ```
-chrome://inspect/#service-workers
+chrome://serviceworker-internals/?devtools
 ```
