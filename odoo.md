@@ -5,6 +5,12 @@ https://www.cybrosys.com/blog/how-to-install-odoo-17-in-windowsHow to install th
 ```
 
 
+====Learn Odoo===
+```
+https://www.odoo.com/nl_NL/slides/partner-technical-training-introduction-to-development-318 
+```
+
+
 == How to run odoo from terminal==
 ```
 python3 odoo-bin --addons-path=/odoo/odoo-server/addons,/odoo/custom/addons/test_cicd --http-port=8099 -d test -i royal_motorsc
