@@ -78,6 +78,13 @@ request.session['val_name']
 <t t-debug="pdb"/>
 ```
 
+===AttributeError: module 'lib' has no attribute 'X509_V_FLAG_NOTIFY_POLICY'===
+```
+sudo rm -rf /usr/lib/python3/dist-packages/OpenSSL
+sudo pip3 install pyopenssl
+sudo pip3 install pyopenssl --upgrade
+```
+
 
 ====Share filestore with multiple db======
 ```
