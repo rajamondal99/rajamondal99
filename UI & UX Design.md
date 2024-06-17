@@ -37,3 +37,8 @@ https://downloader.la
 ```https://logolab.app```
 
 
+# Project diagram
+```
+https://www.websequencediagrams.com/
+```
+
