@@ -5,7 +5,7 @@ cat /etc/os-release
 
 2. ==Vs code multi-cursor setting (mint)==
 ```
-In Linux Mint Go to settings -> windows -> In the behavior tab for resizing windows Alt will be selected, disable it. Come back to VS code, in the Setting Search toggle multi-cursor modifier ensure that it is in ALT, Now, you can use Alt + select to insert multicursor.
+In Linux Mint Go to settings -> windows -> In the behavior tab for resizing windows Alt will be selected, disable it. Return to VS code, in the Setting Search toggle multi-cursor modifier ensure that it is in ALT, Now, you can use Alt + select to insert multicursor.
 ```
 3. ===To check bssid of wifi (in linux)===
 ```
@@ -33,3 +33,8 @@ ls -l -h
 ```
 lsof -i :8080
 ```
+
+9. To merge the file inside the folder during folder move. use below command
+    ```
+    rsync -av --progress source/* destination
+    ```
