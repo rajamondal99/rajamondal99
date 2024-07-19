@@ -1,0 +1,112 @@
+## Method 1: Kill the session
+
+==> Check the open sessions
+
+Quary : select * from pg_stat_activity;
+
+
+Example record 
+-------------------------------------------------------------------
+datid            | 13443
+datname          | postgres
+pid              | 3990883
+leader_pid       | 
+usesysid         | 16384
+usename          | odoo
+application_name | odoo-3990882
+client_addr      | 127.0.0.1
+client_hostname  | 
+client_port      | 53408
+backend_start    | 2024-07-17 15:42:22.538136+02
+xact_start       | 
+query_start      | 2024-07-17 15:42:22.606419+02
+state_change     | 2024-07-17 15:42:22.606449+02
+wait_event_type  | Client
+wait_event       | ClientRead
+state            | idle
+backend_xid      | 
+backend_xmin     | 
+query            | COMMIT
+backend_type     | client backend
+
+
+------------------------------------------------------------------ 
+
+
+==> Filter session based on user and db
+
+
+Quary : select * from pg_stat_activity where datname='odoo_prod_15_04_24' and usename='odoo' and state='active';
+
+
+==> To kill the session 
+Quary:  SELECT pg_terminate_backend(pid) FROM pg_stat_activity WHERE pid = <session_id>;  
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+## Method 2: Use the pg_locks system view
+
+==> To cancel the transaction we need 'table_oid'
+Quary : SELECT oid FROM pg_class WHERE relname = '<table_name>';
+
+Output:
+-[ RECORD 1 ]
+oid | 820198
+
+
+==> Check the row lock is exixt or not
+
+Quary : SELECT * FROM pg_locks WHERE relation = '<table_oid>' AND mode = 'RowShareLock';
+
+Outpout:
+-[ RECORD 1 ]------+-------------
+locktype           | relation
+database           | 817603
+relation           | 820198
+page               | 
+tuple              | 
+virtualxid         | 
+transactionid      | 
+classid            | 
+objid              | 
+objsubid           | 
+virtualtransaction | 3/1601
+pid                | 45590
+mode               | RowShareLock
+granted            | t
+fastpath           | t
+waitstart          | 
+
+
+
+==> To cancle the transaction
+
+Quary: SELECT pg_cancel_backend(<pid>);  
+
+Output: 
+-[ RECORD 1 ]-----+--
+pg_cancel_backend | t
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
