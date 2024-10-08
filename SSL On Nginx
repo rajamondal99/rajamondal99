@@ -1,3 +1,12 @@
+# To create ssl certificate for all subdomains check the chatGPT chat below and the command.
+```
+https://chatgpt.com/share/67039cf2-223c-8011-97f3-4cc0ccc2d373
+```
+```
+sudo certbot certonly --manual --preferred-challenges=dns -d siteblog.co -d *.siteblog.co
+```
+
+
 
 referance 
 ```
