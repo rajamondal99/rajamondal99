@@ -1,3 +1,9 @@
+=== How to check custom addons in odoo sh terminal ====
+```
+cd src/user
+```
+
+
 ===How to install odoo in windows system. (for developer)========
 ```
 https://www.cybrosys.com/blog/how-to-install-odoo-17-in-windowsHow to install the Odoo 17 in Windows 10/11
