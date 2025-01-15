@@ -54,3 +54,7 @@ https://yqnn.github.io
 https://www.websequencediagrams.com/
 ```
 
+# Ant Design (Best css library for dashboard design)
+```
+https://ant.design
+```
