@@ -1,3 +1,8 @@
+==== To update all modules during development ====
+```
+--dev=all
+```
+
 === How to check custom addons in odoo sh terminal ====
 ```
 cd src/user
