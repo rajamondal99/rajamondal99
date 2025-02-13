@@ -63,3 +63,9 @@ https://www.websequencediagrams.com/
 ```
 https://ant.design
 ```
+
+# GSAP (For Animation)
+```
+https://gsap.com/
+```
+
